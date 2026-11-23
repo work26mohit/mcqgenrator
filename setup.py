@@ -1,1 +1,10 @@
-#for installing local  packages in virtual environment
+from setuptools import find_packages,setup
+
+setup(
+    name='mcqgenrator',
+    version='0.0.1',
+    author='mohit marwal',
+    author_email='work26mohit@gmail.com',
+    install_requires=["openai","langchain","streamlit","python-dotenv","PyPDF2"],
+    packages=find_packages()
+)
